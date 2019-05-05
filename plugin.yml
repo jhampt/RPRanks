@@ -1,0 +1,9 @@
+name: RPRanks
+main: RPRanks\RPRanks
+author: jhampt
+version: 1.0.0
+api: [3.0.0]
+commands:
+  rpranks:
+    aliases: [rprank]
+    description: Opens RPRanks Form
