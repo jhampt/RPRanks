@@ -26,22 +26,22 @@ class RPRanks extends PluginBase implements Listener{
             $this->getLogger()->error("RPRankForm Requires FormAPI To Work");
             $this->getPluginLoader()->disablePlugin($this);
         }
-   public function checkDepends(): void{
-        $this->formapi = $this->getServer()->getPluginManager()->getPlugin("PCE");
-        if(is_null($this->PCE)){
-            $this->getLogger()->error("RPRankForm Requires PCE To Work");
-            $this->getPluginLoader()->disablePlugin($this);
+        public function checkDepends(): void{
+             $this->PCE = $this->getServer()->getPluginManager()->getPlugin("PCE");
+              if(is_null($this->PCE)){
+                 $this->getLogger()->error("RPRankForm Requires PCE To Work");
+                 $this->getPluginLoader()->disablePlugin($this);
     }
     public function checkDepends(): void{
-        $this->formapi = $this->getServer()->getPluginManager()->getPlugin("FormAPI");
+        $this->PureChat = $this->getServer()->getPluginManager()->getPlugin("FormAPI");
         if(is_null($this->PureChat)){
             $this->getLogger()->error("RPRankForm Requires PureChat To Work");
             $this->getPluginLoader()->disablePlugin($this);
         }
-    public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args):bool{
-        if($cmd->getName() == "rpranks"){
-            if(!($sender instanceof Player)){
-                return true;
+        public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args):bool{
+            if($cmd->getName() == "rpranks"){
+                if(!($sender instanceof Player)){
+                    return true;
             }
             $api = $this->getServer()->getPluginManager()->getPlugin("FormAPI");
             $form = $api->createSimpleForm(function (Player $sender, $data){
