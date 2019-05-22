@@ -1,6 +1,16 @@
 <?php
 namespace RPRanks;
+use pocketmine\plugin\PluginBase;
+use pocketmine\event\Listener;
 use pocketmine\Player;
+use pocketmine\Server;
+use jojoe77777\FormAPI;
+use pocketmine\command\Command;
+use _64FF00\PureChat\PureChat;
+use pocketmine\command\CommandSender;
+use pocketmine\command\PluginCommand;
+use PCE\PCE;
+use PCE\PCE\PCE;
 class RPRanks extends PluginBase implements Listener{
     public function onEnable(): void{
         $this->getServer()->getPluginManager()->registerEvents(($this), $this);
@@ -8,6 +18,7 @@ class RPRanks extends PluginBase implements Listener{
     }
     public function onDisable(): void{
         $this->getLogger()->info("RPRankForm Disabled");
+        $this->getPluginLoader()->disablePlugin($this);
     }
     public function checkDepends(): void{
         $this->formapi = $this->getServer()->getPluginManager()->getPlugin("FormAPI");
