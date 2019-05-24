@@ -1,1 +1,50 @@
+# plugin by jhampt #
+# i do customizable plugins you can contact me on discord #
+# you can contact me in the needs of suggestions to this plugin #
+# or if you would like to purchase a custom plugin from me #
+# my disocrd server: "Not Done" #
+# my discord name: jhampt#0592 #
 
+# This Plugin Is A PocketMine Plugin For Prison Servers #
+# This Is A Ranking Plugin For PocketMine Prison Servers #
+
+# use \n for a new line as always #
+# use & for color coding #
+
+# note if this is set to true you must have a valid provider name for provider below #
+# if set to "true" your server will use a provider #
+# if set to "false" your server will not use a provider #
+enable_provider: "false"
+
+# enter the provider which you would like to use below #
+# providers supported mysql, json, yaml
+provider: "yaml"
+
+# if set to "true" below the prestige command will be enabled #
+# if set to "false" below the prestige command will be disabled #
+enable_prestige_command: "false"
+
+# if set to "true" below the plugin will use EconomyAPI #
+# if set to "false" below the plugin will **NOT** use EconomyAPI #
+enable_economyapi: "false"
+
+# if set to "true" below the player must have permission "rpranks.use" to use commands in rpranks #
+# if set to "false" below the players will not need permission "rpranks.use" and every player will have access to this command #
+enable_permission: "false"
+
+# if set to "true" below this plugin will add command /rankup to your server and /ru as an alias #
+# if set to "false" below this plugin will not display /rankup or its alias and disable the command #
+enable_command: "false"
+
+# if set to true below the plugin will have a prefix in front of command messages #
+# if set to false below the plugin will **NOT** have a prefix in front of command messages #
+enable_prefix: "false"
+
+# note prefix above has to be set to true for this to work #
+prefix: "RPRanks"
+
+# if set to "true" below the plugin will use formapi by jojoe77777 and use a Form / UI #
+# if set to "false" below the plugin will just use normal commands and not use a Form / UI #
+enable_formapi: "false"
+
+# more features coming soon #
