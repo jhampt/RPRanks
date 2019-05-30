@@ -1,3 +1,4 @@
+---
 # plugin by jhampt #
 # i do customizable plugins you can contact me on discord #
 # you can contact me in the needs of suggestions to this plugin #
@@ -46,5 +47,4 @@ prefix: "RPRanks"
 # if set to "true" below the plugin will use formapi by jojoe77777 and use a Form / UI #
 # if set to "false" below the plugin will just use normal commands and not use a Form / UI #
 enable_formapi: "false"
-
-# more features coming soon #
+...
