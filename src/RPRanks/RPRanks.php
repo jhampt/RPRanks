@@ -42,7 +42,7 @@ $this->getPluginLoader()->disablePlugin($this);
 }
 }
 public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args):bool{
-if($cmd->getName() == "rpranks"){
+if($cmd->getName() == "rpranks"{
 if(!($sender instanceof Player)){
 return true;
 }
